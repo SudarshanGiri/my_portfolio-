@@ -1,0 +1,36 @@
+#skills{
+    width: 100%;
+    display: flex;
+  
+}
+.skill-box{
+
+    background-color:#eee;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: rgb(8, 7, 7);
+    padding:  90px;
+    .title{
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 50px;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        i{
+            font-size: 90px;
+            margin: 40px;
+            
+        }    
+
+    }
+  
+        
+}

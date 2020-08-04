@@ -10,6 +10,7 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
     color: rgb(8, 7, 7);
     padding:  90px;
@@ -24,10 +25,11 @@
         flex-direction: column;
         flex-wrap: wrap;
         font-weight: bold;
+        width: 200px;
         text-align: center;
         i{
             font-size: 90px;
-            margin: 40px;
+            margin: 60px;
             &:hover{
                 transform: scale(1.2);
             }
@@ -40,10 +42,14 @@
 }
 @media(max-width:768px){
     .skill-box{
-        padding: 10px;
+        padding: 90px 20px;
+        font-size: 12px;
         .item{
-            border: 2px solid red;
+            width: 100px;
+
             i{
+                margin: 40px;
+
                 font-size: 30px;
                 
                

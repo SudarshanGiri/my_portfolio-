@@ -86,7 +86,11 @@ nav .nav-links li a {
 }
 
 nav .nav-links li a:hover {
-  color: orange;
+  color: #0ff;
+}
+
+nav .nav-links li.active a {
+  color: #0ff;
 }
 
 nav .burger {
@@ -100,8 +104,8 @@ nav .burger li {
   background-color: #fff;
   margin: 10px 5px;
   list-style: none;
-  width: 50px;
-  height: 2px;
+  width: 40px;
+  height: 1px;
 }
 
 .wallpaper {
@@ -304,8 +308,8 @@ nav .burger li {
     width: 100%;
   }
   .main_content .right-wrapper .description {
-    padding: 50px;
-    font-size: 12px;
+    padding: 10px 50px;
+    font-size: 16px;
   }
   nav .logo {
     font-size: 18px;
@@ -386,6 +390,9 @@ nav .burger li {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #080707;
@@ -410,12 +417,13 @@ nav .burger li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-weight: bold;
+  width: 200px;
   text-align: center;
 }
 
 .skill-box .item i {
   font-size: 90px;
-  margin: 40px;
+  margin: 60px;
 }
 
 .skill-box .item i:hover {
@@ -425,12 +433,14 @@ nav .burger li {
 
 @media (max-width: 768px) {
   .skill-box {
-    padding: 10px;
+    padding: 90px 20px;
+    font-size: 12px;
   }
   .skill-box .item {
-    border: 2px solid red;
+    width: 100px;
   }
   .skill-box .item i {
+    margin: 40px;
     font-size: 30px;
   }
 }
@@ -548,6 +558,9 @@ nav .burger li {
 
 .modal-container .modal .modal-content header .live a {
   color: black;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
 }
 
 .modal-container .modal .modal-content header i {

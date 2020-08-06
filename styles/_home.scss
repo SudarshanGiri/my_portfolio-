@@ -36,7 +36,6 @@
     z-index: 1;
     
     .left-wrapper{
-        animation-duration: 5s;
         display: flex;
         padding: 30px 0px;
         flex-direction: column;
@@ -46,6 +45,8 @@
         background-size: cover;
         width: 40%;
         img{
+            animation-duration: 7s;
+
             margin-top: 30px;
             height: 300px;
             width: 300px;
@@ -54,6 +55,7 @@
         }
      
         .social-media-icons{
+            animation-duration: 5s;
             margin-top: 50px;
             display: flex;
             align-items: center;
@@ -206,6 +208,7 @@
             }
             li:nth-child(2){
                 display: none;
+                
 
             }
             li:nth-child(3){
@@ -226,6 +229,8 @@
             z-index: 9;
             width: 50%;
             height: 90vh;
+            transition:  0.5s ease-in;
+
 
 
             
@@ -244,7 +249,7 @@
             display: flex;
             height: 90vh;
             transform: translateX(0);
-            transition:  0.3s ease-in;
+            transition:  0.5s ease-in;
 
 
            

@@ -106,6 +106,8 @@ nav .burger li {
   list-style: none;
   width: 40px;
   height: 1px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .wallpaper {
@@ -157,8 +159,6 @@ nav .burger li {
 }
 
 .main_content .left-wrapper {
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,6 +179,8 @@ nav .burger li {
 }
 
 .main_content .left-wrapper img {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
   margin-top: 30px;
   height: 300px;
   width: 300px;
@@ -187,6 +189,8 @@ nav .burger li {
 }
 
 .main_content .left-wrapper .social-media-icons {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,6 +354,8 @@ nav .burger li {
     z-index: 9;
     width: 50%;
     height: 90vh;
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
   }
   nav .nav-links li {
     text-align: center;
@@ -365,8 +371,8 @@ nav .burger li {
     height: 90vh;
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    -webkit-transition: 0.3s ease-in;
-    transition: 0.3s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
   }
 }
 

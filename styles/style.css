@@ -18,8 +18,7 @@ nav {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border-bottom: 1px solid white;
-  border-width: 0.02rem;
+  border-bottom: 0.5px solid #646464;
 }
 
 nav .logo {
@@ -112,6 +111,8 @@ nav .burger li {
 
 .wallpaper {
   background-image: url(https://marj3.azureedge.net/wp-content/uploads/2020/03/full-stack-web-developer.jpg_0.jpeg);
+  max-width: 1920px;
+  margin: auto;
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -209,7 +210,7 @@ nav .burger li {
 .main_content .left-wrapper .social-media-icons a {
   color: #fff;
   font-size: 30px;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 100%;
   width: 50px;
   height: 50px;
@@ -243,18 +244,18 @@ nav .burger li {
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   font-family: 'Red Rose', cursive;
-  color: white;
+  color: #0ff;
   text-align: center;
   font-size: 50px;
 }
 
 .main_content .right-wrapper .name span {
   font-family: 'Red Rose', cursive;
-  color: red;
+  color: #fff;
 }
 
 .main_content .right-wrapper .title {
-  color: #0ff;
+  color: #fff;
   text-align: center;
   font-size: 50px;
   margin: 50px 0px;
@@ -267,12 +268,12 @@ nav .burger li {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   font-size: 70px;
-  color: #0ff;
-  text-shadow: 0px 0px 50px #0ff;
+  color: #09ff1e;
+  text-shadow: 0px 0px 50px #15ff00;
 }
 
 .main_content .right-wrapper .title i:hover {
-  text-shadow: 0px 0px 50px #fff8;
+  text-shadow: 0px 0px 50px #fff;
   cursor: pointer;
 }
 
@@ -280,7 +281,8 @@ nav .burger li {
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   width: 100%;
-  text-align: center;
+  text-align: justify;
+  letter-spacing: 2px;
   font-size: 20px;
 }
 
@@ -293,7 +295,7 @@ nav .burger li {
   margin-top: -25px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1125px) {
   .wallpaper {
     height: 1080px;
   }
@@ -347,15 +349,16 @@ nav .burger li {
     top: 90px;
     bottom: 0;
     right: 0;
-    -webkit-transform: translateX(350px);
-            transform: translateX(350px);
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
     background-color: #000;
     position: absolute;
     z-index: 9;
     width: 50%;
-    height: 90vh;
+    height: 100vh;
     -webkit-transition: 0.5s ease-in;
     transition: 0.5s ease-in;
+    padding-bottom: 90px;
   }
   nav .nav-links li {
     text-align: center;
@@ -368,27 +371,25 @@ nav .burger li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 90vh;
+    height: 100vh;
     -webkit-transform: translateX(0);
             transform: translateX(0);
-    -webkit-transition: 0.5s ease-in;
-    transition: 0.5s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
   }
 }
 
 #skills {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background-color: #eee;
 }
 
 .skill-box {
-  background-color: #eee;
+  max-width: 1200px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -407,7 +408,7 @@ nav .burger li {
 
 .skill-box .title {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 50px;
 }
@@ -452,21 +453,22 @@ nav .burger li {
 }
 
 .portfolio-item-container {
+  max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 100%;
   padding: 90px 10px;
 }
 
 .portfolio-item-container .title {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 50px;
 }
@@ -475,8 +477,9 @@ nav .burger li {
   font-size: 30px;
   text-align: center;
   width: 100%;
+  margin: 30px 0px;
   padding: 5px 0px;
-  background-color: black;
+  background-color: #868686;
   color: white;
 }
 
@@ -671,6 +674,18 @@ body {
   overflow-x: hidden;
 }
 
+.line-container {
+  width: 100%;
+}
+
+.line-container .line {
+  background-color: #000;
+  border-radius: 20%;
+  height: 8px;
+  width: 100px;
+  margin: auto;
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -693,16 +708,19 @@ body {
 }
 
 .contact .title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
   font-size: 50px;
+}
+
+.contact .email {
+  margin: 30px 0px;
 }
 
 .contact .social-media-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 30px 0px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -731,6 +749,6 @@ footer {
 
 footer .title {
   font-size: 20px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 /*# sourceMappingURL=style.css.map */

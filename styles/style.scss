@@ -22,7 +22,17 @@ body{
   
 }
 
+.line-container{
+    width: 100%;
+    .line{
+        background-color: #000;
+        border-radius: 20%;
+        height: 8px;
+        width: 100px;
+        margin: auto;
 
+    }
+}
 .contact{
     display: flex;
     flex-direction: column;
@@ -34,13 +44,17 @@ body{
     font-size: 30px;
 
     .title{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         text-align: center;
         font-size: 50px;
     }
+    .email{
+        margin: 30px 0px;
+
+
+    }
     .social-media-icons{
         display: flex;
-        margin: 30px 0px;
         justify-content: space-evenly;
         width: 50%;
 
@@ -63,6 +77,6 @@ footer{
 
     .title{
         font-size: 20px;
-        opacity: 0.7;
+        opacity: 0.9;
     }
 }

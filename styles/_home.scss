@@ -1,5 +1,7 @@
 .wallpaper{
     background-image: url(https://marj3.azureedge.net/wp-content/uploads/2020/03/full-stack-web-developer.jpg_0.jpeg);
+    max-width: 1920px;
+    margin: auto;
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -65,7 +67,7 @@
             a{
                 color: #fff;
                 font-size: 30px;
-                border: 2px solid white;
+                border: 1px solid white;
                 border-radius: 100%;
                 width: 50px;
                 height: 50px;
@@ -91,19 +93,19 @@
         .name{
             animation-duration: 5s;
             font-family: 'Red Rose', cursive;
-            color: white;
+            color: #0ff;
             text-align: center;
             font-size: 50px;
             span{
                 font-family: 'Red Rose', cursive;                
-                color: red;
+                color: #fff;
             }
         }
         
       
         
         .title{
-            color: #0ff;
+            color: #fff;
             text-align: center;
             font-size: 50px;
             margin: 50px 0px;
@@ -114,11 +116,11 @@
             i{  
                 animation-duration: 3s;
                 font-size: 70px;
-                color: #0ff;
+                color: rgb(9, 255, 30);
                
-                text-shadow: 0px 0px 50px #0ff;
+                text-shadow: 0px 0px 50px rgb(21, 255, 0);
                 &:hover{
-                    text-shadow: 0px 0px 50px #fff8;
+                    text-shadow: 0px 0px 50px #fff;
                     cursor: pointer;
                 }
             }
@@ -129,8 +131,10 @@
         .description{
             animation-duration: 5s;
             width: 100%;
-            text-align: center; 
+            text-align: justify; 
+            letter-spacing: 2px;
             font-size: 20px;
+           
             &::before{
                 content: open-quote;
                 font-size: 60px;
@@ -148,8 +152,8 @@
     
 }
 
-
-@media (max-width:768px){
+//for iphone and mobile displays
+@media (max-width:1125px){
  
    .wallpaper{
        height: 1080px;
@@ -223,13 +227,15 @@
             top: 90px; 
             bottom: 0;
             right: 0;
-            transform: translateX(350px);
+            transform: translateX(100vw);
             background-color: #000;
             position: absolute;
             z-index: 9;
             width: 50%;
-            height: 90vh;
+            height: 100vh;
             transition:  0.5s ease-in;
+            padding-bottom: 90px;
+
 
 
 
@@ -247,9 +253,9 @@
         }
         .nav-links-show{
             display: flex;
-            height: 90vh;
+            height: 100vh;
             transform: translateX(0);
-            transition:  0.5s ease-in;
+            transition:  0.3s ease-in;
 
 
            

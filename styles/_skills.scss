@@ -1,9 +1,9 @@
 section#skills{
     color: #fff;
     width: 100%;
-    padding-top: 90px;
     height: fit-content;
-    background-color:#262626;
+    background-color:#0c0c0c;
+    padding: 90px 10px 0 10px;
     .line{
         background: #fff;
     }
@@ -15,10 +15,9 @@ section#skills{
         font-size: 50px;
     }
     .skills-tab{
-        margin: 10px 10%;
-        background: rgb(56, 54, 54);
+        background: #221f1f;
         display: flex;
-        margin-top: 50px;
+        margin: 30px 0 0 0;
         div{
             width: 33.33%;
             text-align: center;
@@ -28,6 +27,7 @@ section#skills{
             letter-spacing: 2px;
             padding: 10px 0;
             letter-spacing: 3px;
+            border-bottom: 4px solid rgb(124, 121, 121);
             cursor: pointer;
         }
         div.active{

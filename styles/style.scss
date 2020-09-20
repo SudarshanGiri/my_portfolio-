@@ -40,9 +40,13 @@ body{
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #eee;
+    background-color: #0c0c0c;
+    color: #fff;
     padding:90px 10px;
     font-size: 30px;
+    .line-container .line{
+        background: #fff;
+    }
 
     .title{
         margin-bottom: 20px;
@@ -60,16 +64,16 @@ body{
         width: 50%;
 
         i{
-            color: black;
+            color: #fff;
         }
     }
     
 
 }
 footer{
-    background-color: rgb(221, 217, 217);
+    background-color: #000;
+    color: #fff;
     height: 90px;
-    color: rgb(43, 40, 40);
     z-index: 999999999999;
     display: flex;
     justify-content: center;

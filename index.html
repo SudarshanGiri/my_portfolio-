@@ -18,6 +18,9 @@
 <link rel="stylesheet" href="styles/style.css">
 <!--animate css-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+<!---scroll animation-->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 
 <body>
@@ -88,63 +91,110 @@
         </div>
     </section>
     <section id="skills">
-        <div class="frontend-skills skill-box">
-            <div class="title" data-aos="fade-right">SKILLS</div>
-            <div class="line-container">
-                <div class="line"></div>
+        <div class="title" data-aos="fade-right">SKILLS</div>
+        <div class="line-container" data-aos="fade-left">
+            <div class="line"></div>
+        </div>
+        <div class="skills-tab" data-aos="fade-right">
+            <div class="active frontend-tab">Frontend</div>
+            <div class="backend-tab">Backend</div>
+            <div class="others-tab">Others</div>
+        </div>
+        <div class="skill-box" data-aos="fade-left">
+
+            <div class="frontend-skills">
+
+                <div class="item">
+                    <i class="fab fa-html5"></i>
+                    <div class="desc">HTML5</div>
+
+                </div>
+                <div class="item">
+                    <i class="fab fa-css3"></i>
+                    <div class="desc">CSS3</div>
+
+                </div>
+                <div class="item">
+                    <i class="fab fa-sass"></i>
+                    <div class="desc">SASS /SCSS</div>
+
+                </div>
+                <div class="item">
+                    <i class="fab fa-js"></i>
+                    <div class="desc">Javascript</div>
+
+                </div>
+                <div class="item">
+                    <i class="fab fa-react"></i>
+                    <div class="desc">React</div>
+
+                </div>
+                <div class="item">
+                    <i class="fab fa-bootstrap"></i>
+                    <div class="desc">Bootstrap</div>
+
+                </div>
+                <div class="item">
+                    <i class="fab fa-adobe"></i>
+                    <div class="desc">Photoshop</div>
+
+                </div>
+                <div class="item">
+                    <i class="fab fa-adobe"></i>
+                    <div class="desc">Illustrator</div>
+
+                </div>
+                <div class="item">
+                    <i class="fab fa-adobe"></i>
+                    <div class="desc">Indesign</div>
+
+                </div>
             </div>
-            <div class="item">
-                <i class="fab fa-html5"></i>
-                <div class="desc">HTML5</div>
+            <div class="backend-skills">
+                <div class="item">
+                    <i class="fab fa-php"></i>
+                    <div class="desc">PHP</div>
+
+                </div>
+                <div class="item">
+                    <i class="fab fa-laravel"></i>
+                    <div class="desc">Laravel</div>
+
+                </div>
+                <div class="item">
+                    <i class="fab fa-python"></i>
+                    <div class="desc">Python</div>
+
+                </div>
+
+
+                <div class="item">
+                    <i class="fas fa-database"></i>
+                    <div class="desc">MysQL</div>
+
+                </div>
 
             </div>
-            <div class="item">
-                <i class="fab fa-css3"></i>
-                <div class="desc">CSS3</div>
+            <div class="others-skills">
+                <div class="item">
+                    <i class="fab fa-git"></i>
+                    <div class="desc">Git</div>
+                </div>
+                <div class="item">
+                    <i class="fab fa-github"></i>
+                    <div class="desc">Github</div>
+                </div>
+                <div class="item">
+                    <i class="fab fa-wordpress"></i>
+                    <div class="desc">Wordpress</div>
+                </div>
+                <div class="item">
+                    <i class="fab fa-drupal"></i>
+                    <div class="desc">Drupal</div>
+                </div>
+
 
             </div>
-            <div class="item">
-                <i class="fab fa-sass"></i>
-                <div class="desc">SASS /SCSS</div>
-
-            </div>
-            <div class="item">
-                <i class="fab fa-js"></i>
-                <div class="desc">Javascript</div>
-
-            </div>
-            <div class="item">
-                <i class="fab fa-bootstrap"></i>
-                <div class="desc">Bootstrap</div>
-
-            </div>
-            <div class="item">
-                <i class="fab fa-php"></i>
-                <div class="desc">PHP</div>
-
-            </div>
-            <div class="item">
-                <i class="fab fa-laravel"></i>
-                <div class="desc">Laravel</div>
-
-            </div>
-            <div class="item">
-                <i class="fab fa-python"></i>
-                <div class="desc">Python</div>
-
-            </div>
-
-            <div class="item">
-                <i class="fas fa-database"></i>
-                <div class="desc">MysQL</div>
-
-            </div>
-            <div class="item">
-                <i class="fab fa-github"></i>
-                <div class="desc">Github</div>
-
-            </div>
-
 
 
         </div>
@@ -157,24 +207,41 @@
             <div class="line-container">
                 <div class="line"></div>
             </div>
-            <div class="sub-title">WEB</div>
-            <div id="p1-item" class="portfolio-item"><img src="images/portfolio/voting.JPG" alt=""></div>
-            <div id="p2-item" class="portfolio-item"><img src="images/portfolio/shoppingcart.JPG" alt=""></div>
-            <div id="p3-item" class="portfolio-item"><img src="images/portfolio/mywebsite.JPG" alt=""></div>
-            <div id="p4-item" class="portfolio-item"><img src="images/portfolio/blog.JPG" alt=""></div>
-            <div class="sub-title">GRAPHICS DESIGN</div>
-            <div id="p5-item" class="portfolio-item"><img src="images/portfolio/graphics design/NEW-01.jpg" alt="">
+            <div class="projects-tab sub-title" data-aos="fade-right">
+                <div class="active">Frontend</div>
+                <div>FullStack</div>
+                <div>Graphics Design</div>
             </div>
-            <div id="p6-item" class="portfolio-item"><img src="images/portfolio/graphics design/ride.jpg" alt=""></div>
-            <div id="p7-item" class="portfolio-item"><img src="images/portfolio/graphics design/usa.jpg" alt=""></div>
-            <div id="p8-item" class="portfolio-item"><img src="images/portfolio/graphics design/uk.jpg" alt=""></div>
-            <div id="p9-item" class="portfolio-item"><img src="images/portfolio/graphics design/plumbercard.jpg" alt="">
-            </div>
-            <div id="p10-item" class="portfolio-item"><img src="images/portfolio/graphics design/colorlogo-01.jpg"
-                    alt="">
-            </div>
-            <div id="p11-item" class="portfolio-item"><img
-                    src="images/portfolio/graphics design/known logo design-01.jpg" alt="">
+            <div class="portfolio-items-wrapper">
+                <div id="p1-item" class="portfolio-item" data-aos="flip-right"><img src="images/portfolio/voting.JPG"
+                        alt=""></div>
+                <div id="p2-item" class="portfolio-item" data-aos="flip-down"><img
+                        src="images/portfolio/shoppingcart.JPG" alt=""></div>
+                <div id="p3-item" class="portfolio-item" data-aos="flip-right"><img src="images/portfolio/mywebsite.JPG"
+                        alt=""></div>
+                <div id="p4-item" class="portfolio-item" data-aos="flip-up"><img src="images/portfolio/blog.JPG" alt="">
+                </div>
+                <div id="p5-item" class="portfolio-item" data-aos="flip-right"><img
+                        src="images/portfolio/graphics design/NEW-01.jpg" alt="">
+                </div>
+                <div id="p6-item" class="portfolio-item" data-aos="flip-down"><img
+                        src="images/portfolio/graphics design/ride.jpg" alt="">
+                </div>
+                <div id="p7-item" class="portfolio-item" data-aos="flip-right"><img
+                        src="images/portfolio/graphics design/usa.jpg" alt="">
+                </div>
+                <div id="p8-item" class="portfolio-item" data-aos="flip-right"><img
+                        src="images/portfolio/graphics design/uk.jpg" alt="">
+                </div>
+                <div id="p9-item" class="portfolio-item" data-aos="flip-right"><img
+                        src="images/portfolio/graphics design/plumbercard.jpg" alt="">
+                </div>
+                <div id="p10-item" class="portfolio-item" data-aos="flip-up"><img
+                        src="images/portfolio/graphics design/colorlogo-01.jpg" alt="">
+                </div>
+                <div id="p11-item" class="portfolio-item" data-aos="flip-right"><img
+                        src="images/portfolio/graphics design/known logo design-01.jpg" alt="">
+                </div>
             </div>
 
 

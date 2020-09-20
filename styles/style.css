@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap");
 nav {
-  background-color: black;
+  background-color: transparent;
   height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,7 +18,6 @@ nav {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border-bottom: 0.5px solid #646464;
 }
 
 nav .logo {
@@ -82,6 +81,7 @@ nav .nav-links li a {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  padding-bottom: 10px;
 }
 
 nav .nav-links li a:hover {
@@ -89,7 +89,7 @@ nav .nav-links li a:hover {
 }
 
 nav .nav-links li.active a {
-  color: #0ff;
+  border-bottom: 3px solid #fff;
 }
 
 nav .burger {
@@ -392,41 +392,99 @@ nav .burger li {
   }
 }
 
-#skills {
+section#skills {
+  color: #fff;
   width: 100%;
-  background-color: #eee;
+  padding-top: 90px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #262626;
 }
 
-.skill-box {
-  max-width: 1200px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  color: #080707;
-  padding: 90px;
+section#skills .line {
+  background: #fff;
 }
 
-.skill-box .title {
+section#skills .title {
   width: 100%;
   margin-bottom: 20px;
   text-align: center;
   font-size: 50px;
 }
 
-.skill-box .item {
+section#skills .skills-tab {
+  margin: 10px 10%;
+  background: #383636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+section#skills .skills-tab div {
+  width: 33.33%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+section#skills .skills-tab div.active {
+  border-bottom: 4px solid #0ff;
+}
+
+section#skills .skill-box {
+  max-width: 1200px;
+  width: 100%;
+  height: 700px;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#skills .skill-box > div {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-height: 600px;
+}
+
+section#skills .skill-box > div > div {
+  width: 33.33% !important;
+  margin: 20px auto;
+}
+
+section#skills .skill-box .backend-skills {
+  display: none;
+}
+
+section#skills .skill-box .others-skills {
+  display: none;
+}
+
+section#skills .skill-box .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,14 +497,20 @@ nav .burger li {
   font-weight: bold;
   width: 200px;
   text-align: center;
+  margin: 25px 0;
 }
 
-.skill-box .item i {
-  font-size: 90px;
-  margin: 60px;
+section#skills .skill-box .item .desc {
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.skill-box .item i:hover {
+section#skills .skill-box .item i {
+  font-size: 70px;
+  margin: 10px 0px;
+}
+
+section#skills .skill-box .item i:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -465,6 +529,11 @@ nav .burger li {
   }
 }
 
+section#portfolio {
+  background: #504c4c;
+  color: #fff;
+}
+
 .portfolio-item-container {
   max-width: 1920px;
   display: -webkit-box;
@@ -476,7 +545,7 @@ nav .burger li {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 90px 10px;
+  padding: 90px 10px 0 10px;
 }
 
 .portfolio-item-container .title {
@@ -486,29 +555,61 @@ nav .burger li {
   font-size: 50px;
 }
 
-.portfolio-item-container .sub-title {
+.portfolio-item-container .line-container .line {
+  background: #fff;
+}
+
+.portfolio-item-container .projects-tab {
   font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
   width: 100%;
   margin: 30px 0px;
-  padding: 5px 0px;
-  background-color: #868686;
-  color: white;
+  background-color: #221f1f;
 }
 
-.portfolio-item {
+.portfolio-item-container .projects-tab > div {
+  font-weight: bold;
+  padding: 12px 0 15px 0;
+  width: 33.33%;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.portfolio-item-container .projects-tab div.active {
+  border-bottom: 4px solid #0ff;
+  background: #2e2d2d;
+}
+
+.portfolio-items-wrapper {
+  background: #838181;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.portfolio-items-wrapper .portfolio-item {
   height: 300px;
   width: 400px;
   margin: 20px;
 }
 
-.portfolio-item:hover {
+.portfolio-items-wrapper .portfolio-item:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-transform: scale(1.05) !important;
+          transform: scale(1.05) !important;
 }
 
-.portfolio-item img {
+.portfolio-items-wrapper .portfolio-item img {
   width: 100%;
   height: 100%;
 }
@@ -555,15 +656,21 @@ nav .burger li {
 }
 
 .modal-container .modal .modal-content header .close-modal {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   color: white;
   height: 100%;
   font-size: 30px;
   font-weight: bolder;
   padding: 0px 20px;
   background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal-container .modal .modal-content header .close-modal:hover {

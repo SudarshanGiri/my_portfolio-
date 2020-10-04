@@ -12,7 +12,7 @@ section#skills{
         width: 100%;
         margin-bottom: 20px;
         text-align: center;
-        font-size: 50px;
+        font-size: 2rem;
     }
     .skills-tab{
         background: #221f1f;
@@ -22,7 +22,6 @@ section#skills{
             width: 33.33%;
             text-align: center;
             font-size: 1rem;
-            font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 2px;
             padding: 10px 0;
@@ -71,12 +70,10 @@ section#skills{
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            font-weight: bold ;
             width: 200px;
             text-align: center;
             margin: 25px 0;
             .desc{
-                font-weight: bold;
                 font-size: 20px;
             }
             i{

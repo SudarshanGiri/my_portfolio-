@@ -4,6 +4,9 @@ document.querySelector('.burger').addEventListener('click',function(){
     document.querySelector('.burger').classList.toggle('burger-animate');
 })
 window.addEventListener('DOMContentLoaded', (event) => {
+    var alert=document.querySelector('.alert');
+    setTimeout(function(){ alert.style.display = "none"; }, 4000);
+
     console.log('DOM fully loaded and parsed');
     // skills tab toggle
     var frontend_skills=document.querySelector('.frontend-skills');

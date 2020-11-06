@@ -114,8 +114,8 @@ function scrollFunction() {
     nav.style.borderBottom="1px solid #646464";
     } 
     else{
-        nav.style.background="transparent";
-        nav.style.borderBottom="none";
+        nav.style.background="rgba(0, 0, 0, 0.15)";
+        nav.style.borderBottom="1px solid rgba(255, 255, 255, 0.15)";
 
 
 

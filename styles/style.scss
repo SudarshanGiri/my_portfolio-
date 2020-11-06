@@ -90,8 +90,10 @@ body{
             padding: 50px;
             color: #000;
             width: 40%;
+            border-radius: 10px;
             input{
                 width: 100%;
+                padding: 5px;
             }
             .title{
                 font-size: 30px;
@@ -99,22 +101,25 @@ body{
             fieldset{
 
                 border: none;
-                display: flex;
                 margin: 20px 0;
                 label{
                     font-size: 16px;
+                    display: block;
+                    width: 100%;
                 }
             }
             textarea{
                 width: 100%;
             }
             button{
-                background: rgb(0, 147, 192);
+                background: rgb(0, 195, 255);
                 color: fff;
                 border: none;
                 padding: 10px 20px;
                 font-size: 20px;
                 cursor: pointer;
+                text-transform: uppercase;
+                border-radius: 8px;
             }
         }
         

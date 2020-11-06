@@ -4,9 +4,9 @@
     $subject=$_POST['subject'];
     $content=$_POST['content'];
     $headers='From: '.$_POST['email'];
-    mail('tttt','sdajuposad','asdijsaod','hsaohdoas');
+    //mail('tttt','sdajuposad','asdijsaod','hsaohdoas');
 
-    mail($emailTo,$subject,$content,$headers);
+    //mail($emailTo,$subject,$content,$headers);
     if(mail($emailTo,$subject,$content,$headers)){
       echo '<div class="container alert alert-success text-center">
             Your message was sent, we will get back to you ASAP!</div>';
@@ -47,7 +47,7 @@
 <body>
     <nav>
         <div class="logo">
-            <div class="brand-name">SUDARSHAN</div> <img src="images/logo.png" height="40px" alt="">
+        <img src="images/logo.png" height="40px" alt=""><div class="brand-name">SUDARSHAN</div> 
         </div>
         <ul class="nav-links" id="nav">
             <li class="active"><a href="#home">Home</a></li>
@@ -557,7 +557,7 @@
             </fieldset>
             <fieldset class="form-group">
                 <label for="content">Message</label>
-                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                <textarea name="content" id="content" cols="30" rows="5"></textarea>
             </fieldset>
             <button type="submit" id="submit" name='submit' class="btn btn-primary">Submit</button>
         </form>

@@ -608,7 +608,11 @@
     <script>
         AOS.init({
             offset: 150,
-            duration: 1000
+            duration: 1000,
+            disable: function() {
+            var maxWidth = 800;
+            return window.innerWidth < maxWidth;
+        }
         });
     </script>
 

@@ -29,7 +29,7 @@
     <meta name="keywords" content="Sudarshan Giri, sudarshan giri, sudarshan, Sudarshan, sudarshangiri">
     <meta name="description" content="Full Stack  Developer ">
     <meta name="author" content="Sudarshan Giri">
-    <meta property="og:url" content="http://sudarshangiri7.com.np/" />
+    <meta property="og:url" content="http://sudarshangiri.com.np/" />
     <meta property="og:image" content="./images/portfolio/mywebsite.JPG" />
     <meta property="og:description"
         content="I am a self motivated and self taught Full Stack Web Developer having true passion and Strong Interest in Website Development." />
